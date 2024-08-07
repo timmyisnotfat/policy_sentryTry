@@ -1,0 +1,140 @@
+F:\researchVenv\py38policySentry\Scripts\python.exe F:\timmyisnotfat\policySentryTry\policy_sentry\analysis\forDeny.py
+Processed: FLAW2-Secure-1.json
+Processed: FLAW2-Secure-2.json
+Processed: FLAW2-Secure-3.json
+Processed: FLAW2-Secure-4.json
+Processed: FLAW2-Secure-5.json
+Processed: FLAW2-Secure-6.json
+Processed: FLAW2-Secure-7.json
+Processed: FLAW2-Secure-8.json
+Processed: FLAW2-Secure-9.json
+Processed: FLAW2-Secure-10.json
+Processed: FLAW2-Secure-11.json
+Processed: FLAW2-Secure-12.json
+Processed: FLAW2-Secure-13.json
+Processed: FLAW2-Secure-14.json
+Processed: FLAW2-Secure-15.json
+Processed: FLAW2-Secure-16.json
+Processed: FLAW2-Secure-17.json
+Processed: FLAW2-Secure-18.json
+Processed: FLAW2-Secure-19.json
+Processed: FLAW2-Secure-20.json
+Processed: FLAW2-Secure-21.json
+Processed: FLAW2-Secure-22.json
+Processed: FLAW2-Secure-23.json
+Processed: FLAW2-Secure-24.json
+Processed: FLAW2-Secure-25.json
+Processed: FLAW2-Secure-26.json
+Processed: FLAW2-Secure-27.json
+Processed: FLAW2-Secure-28.json
+Processed: FLAW2-Secure-29.json
+Processed: FLAW2-Secure-30.json
+Processed: FLAW2-Secure-31.json
+Processed: FLAW2-Secure-32.json
+Processed: FLAW2-Secure-33.json
+Processed: FLAW2-Secure-34.json
+Processed: FLAW2-Secure-35.json
+Processed: FLAW2-Secure-36.json
+Processed: FLAW2-Secure-37.json
+Processed: FLAW2-Secure-38.json
+Processed: FLAW2-Secure-39.json
+Processed: FLAW2-Secure-40.json
+Processed: FLAW2-Secure-41.json
+Processed: FLAW2-Secure-42.json
+Processed: FLAW2-Secure-43.json
+Processed: FLAW2-Secure-44.json
+Processed: FLAW2-Secure-45.json
+Processed: FLAW2-Secure-46.json
+Processed: FLAW2-Secure-47.json
+Processed: FLAW2-Secure-48.json
+Processed: FLAW2-Secure-49.json
+Processed: FLAW2-Secure-50.json
+Processed: FLAW2-Secure-51.json
+Processed: FLAW2-Secure-52.json
+Processed: FLAW2-Secure-53.json
+Processed: FLAW2-Secure-54.json
+Processed: FLAW2-Secure-55.json
+Processed: FLAW2-Secure-56.json
+Processed: FLAW2-Secure-57.json
+Processed: FLAW2-Secure-58.json
+Processed: FLAW2-Secure-59.json
+Processed: FLAW2-Secure-60.json
+Processed: FLAW2-Secure-61.json
+Processed: FLAW2-Secure-62.json
+Processed: FLAW2-Secure-63.json
+Processed: FLAW2-Secure-64.json
+Processed: FLAW2-Secure-65.json
+Processed: FLAW2-Secure-66.json
+Output has been saved to expanded_policies_output.txt
+
+Total Action Counts Across All Policies:
+
+Deny Actions in Policies:
+FLAW2-Secure-1.json: No deny actions
+FLAW2-Secure-2.json: No deny actions
+FLAW2-Secure-3.json: No deny actions
+FLAW2-Secure-4.json: No deny actions
+FLAW2-Secure-5.json: No deny actions
+FLAW2-Secure-6.json: No deny actions
+FLAW2-Secure-7.json: No deny actions
+FLAW2-Secure-8.json: No deny actions
+FLAW2-Secure-9.json: No deny actions
+FLAW2-Secure-10.json: No deny actions
+FLAW2-Secure-11.json: No deny actions
+FLAW2-Secure-12.json: No deny actions
+FLAW2-Secure-13.json: No deny actions
+FLAW2-Secure-14.json: No deny actions
+FLAW2-Secure-15.json: No deny actions
+FLAW2-Secure-16.json: No deny actions
+FLAW2-Secure-17.json: No deny actions
+FLAW2-Secure-18.json: No deny actions
+FLAW2-Secure-19.json: No deny actions
+FLAW2-Secure-20.json: No deny actions
+FLAW2-Secure-21.json: No deny actions
+FLAW2-Secure-22.json: No deny actions
+FLAW2-Secure-23.json: No deny actions
+FLAW2-Secure-24.json: No deny actions
+FLAW2-Secure-25.json: No deny actions
+FLAW2-Secure-26.json: No deny actions
+FLAW2-Secure-27.json: No deny actions
+FLAW2-Secure-28.json: No deny actions
+FLAW2-Secure-29.json: No deny actions
+FLAW2-Secure-30.json: No deny actions
+FLAW2-Secure-31.json: No deny actions
+FLAW2-Secure-32.json: No deny actions
+FLAW2-Secure-33.json: No deny actions
+FLAW2-Secure-34.json: No deny actions
+FLAW2-Secure-35.json: No deny actions
+FLAW2-Secure-36.json: No deny actions
+FLAW2-Secure-37.json: No deny actions
+FLAW2-Secure-38.json: No deny actions
+FLAW2-Secure-39.json: No deny actions
+FLAW2-Secure-40.json: No deny actions
+FLAW2-Secure-41.json: No deny actions
+FLAW2-Secure-42.json: No deny actions
+FLAW2-Secure-43.json: No deny actions
+FLAW2-Secure-44.json: No deny actions
+FLAW2-Secure-45.json: No deny actions
+FLAW2-Secure-46.json: No deny actions
+FLAW2-Secure-47.json: No deny actions
+FLAW2-Secure-48.json: No deny actions
+FLAW2-Secure-49.json: No deny actions
+FLAW2-Secure-50.json: No deny actions
+FLAW2-Secure-51.json: No deny actions
+FLAW2-Secure-52.json: No deny actions
+FLAW2-Secure-53.json: No deny actions
+FLAW2-Secure-54.json: No deny actions
+FLAW2-Secure-55.json: No deny actions
+FLAW2-Secure-56.json: No deny actions
+FLAW2-Secure-57.json: No deny actions
+FLAW2-Secure-58.json: No deny actions
+FLAW2-Secure-59.json: No deny actions
+FLAW2-Secure-60.json: No deny actions
+FLAW2-Secure-61.json: No deny actions
+FLAW2-Secure-62.json: No deny actions
+FLAW2-Secure-63.json: No deny actions
+FLAW2-Secure-64.json: No deny actions
+FLAW2-Secure-65.json: No deny actions
+FLAW2-Secure-66.json: No deny actions
+
+Process finished with exit code 0

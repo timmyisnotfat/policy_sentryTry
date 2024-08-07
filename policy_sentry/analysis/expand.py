@@ -107,6 +107,9 @@ def get_expanded_policy(policy: dict[str, Any]) -> dict[str, Any]:
     elif isinstance(modified_statement, list):
         for statement in modified_statement:
             requested_actions = get_actions_from_statement(statement)
+            # print("returns for get_actions_from_statement:")
+            # print(requested_actions)
+            # print("---------------------")
             expanded_actions = determine_actions_to_expand(requested_actions)
             if "NotAction" in statement:
                 if isinstance(statement["NotAction"], list):
@@ -123,4 +126,5 @@ def get_expanded_policy(policy: dict[str, Any]) -> dict[str, Any]:
                 statement["Action"] = expanded_actions
     else:
         logger.critical("Unknown error: The 'Statement' is neither a dict nor a list")
-    return modified_policy
+    # return modified_policy
+    return expanded_actions # For returning expanded actions only and without any other part of policy JSON

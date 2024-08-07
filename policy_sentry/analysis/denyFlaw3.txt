@@ -1,0 +1,248 @@
+F:\researchVenv\py38policySentry\Scripts\python.exe F:\timmyisnotfat\policySentryTry\policy_sentry\analysis\forDeny.py
+Processed: FLAW3-Error-1.json
+Processed: FLAW3-Error-2.json
+Processed: FLAW3-Error-3.json
+Processed: FLAW3-Error-4.json
+Processed: FLAW3-Error-5.json
+Processed: FLAW3-Error-6.json
+Processed: FLAW3-Error-7.json
+Processed: FLAW3-Error-8.json
+Processed: FLAW3-Error-9.json
+Processed: FLAW3-Error-10.json
+Processed: FLAW3-Error-11.json
+Processed: FLAW3-Error-12.json
+Processed: FLAW3-Error-13.json
+Processed: FLAW3-Error-14.json
+Processed: FLAW3-Error-15.json
+Processed: FLAW3-Error-16.json
+Processed: FLAW3-Error-17.json
+Processed: FLAW3-Error-18.json
+Processed: FLAW3-Error-19.json
+Processed: FLAW3-Error-20.json
+Processed: FLAW3-Error-21.json
+Processed: FLAW3-Error-22.json
+Processed: FLAW3-Error-23.json
+Processed: FLAW3-Error-24.json
+Processed: FLAW3-Error-25.json
+Processed: FLAW3-Error-26.json
+Processed: FLAW3-Error-27.json
+Processed: FLAW3-Error-28.json
+Processed: FLAW3-Error-29.json
+Processed: FLAW3-Error-30.json
+Processed: FLAW3-Error-31.json
+Processed: FLAW3-Error-32.json
+Processed: FLAW3-Error-33.json
+Processed: FLAW3-Error-34.json
+Processed: FLAW3-Error-35.json
+Processed: FLAW3-Error-36.json
+Processed: FLAW3-Error-37.json
+Processed: FLAW3-Error-38.json
+Processed: FLAW3-Error-39.json
+Processed: FLAW3-Error-40.json
+Processed: FLAW3-Error-41.json
+Processed: FLAW3-Error-42.json
+Processed: FLAW3-Error-43.json
+Processed: FLAW3-Error-44.json
+Processed: FLAW3-Error-45.json
+Processed: FLAW3-Error-46.json
+Processed: FLAW3-Error-47.json
+Processed: FLAW3-Error-48.json
+Processed: FLAW3-Error-49.json
+Processed: FLAW3-Error-50.json
+Processed: FLAW3-Error-51.json
+Processed: FLAW3-Error-52.json
+Processed: FLAW3-Error-53.json
+Processed: FLAW3-Error-54.json
+Processed: FLAW3-Error-55.json
+Processed: FLAW3-Error-56.json
+Processed: FLAW3-Error-57.json
+Processed: FLAW3-Error-58.json
+Processed: FLAW3-Error-59.json
+Processed: FLAW3-Error-60.json
+Processed: FLAW3-Error-61.json
+Processed: FLAW3-Error-62.json
+Processed: FLAW3-Error-63.json
+Processed: FLAW3-Error-64.json
+Processed: FLAW3-Error-65.json
+Processed: FLAW3-Error-66.json
+Processed: FLAW3-Error-67.json
+Processed: FLAW3-Error-68.json
+Processed: FLAW3-Error-69.json
+Processed: FLAW3-Error-70.json
+Processed: FLAW3-Error-71.json
+Processed: FLAW3-Error-72.json
+Processed: FLAW3-Error-73.json
+Processed: FLAW3-Error-74.json
+Processed: FLAW3-Error-75.json
+Processed: FLAW3-Error-76.json
+Processed: FLAW3-Error-77.json
+Processed: FLAW3-Error-78.json
+Processed: FLAW3-Error-79.json
+Processed: FLAW3-Error-80.json
+Processed: FLAW3-Error-81.json
+Processed: FLAW3-Error-82.json
+Processed: FLAW3-Error-83.json
+Processed: FLAW3-Error-84.json
+Processed: FLAW3-Error-85.json
+Processed: FLAW3-Error-86.json
+Processed: FLAW3-Error-87.json
+Processed: FLAW3-Error-88.json
+Processed: FLAW3-Error-89.json
+Processed: FLAW3-Error-90.json
+Processed: FLAW3-Error-91.json
+Processed: FLAW3-Error-92.json
+Processed: FLAW3-Error-93.json
+Processed: FLAW3-Error-94.json
+Processed: FLAW3-Error-95.json
+Processed: FLAW3-Error-96.json
+Processed: FLAW3-Error-97.json
+Processed: FLAW3-Error-98.json
+Processed: FLAW3-Error-99.json
+Processed: FLAW3-Error-100.json
+Processed: FLAW3-Error-101.json
+Processed: FLAW3-Error-102.json
+Processed: FLAW3-Error-103.json
+Processed: FLAW3-Error-104.json
+Processed: FLAW3-Error-105.json
+Processed: FLAW3-Error-106.json
+Processed: FLAW3-Error-107.json
+Processed: FLAW3-Error-108.json
+Processed: FLAW3-Error-109.json
+Processed: FLAW3-Error-110.json
+Processed: FLAW3-Error-111.json
+Processed: FLAW3-Error-112.json
+Processed: FLAW3-Error-113.json
+Processed: FLAW3-Error-114.json
+Processed: FLAW3-Error-115.json
+Processed: FLAW3-Error-116.json
+Processed: FLAW3-Error-117.json
+Processed: FLAW3-Error-118.json
+Processed: FLAW3-Error-119.json
+Processed: FLAW3-Error-120.json
+Output has been saved to expanded_policies_output.txt
+
+Total Action Counts Across All Policies:
+
+Deny Actions in Policies:
+FLAW3-Error-1.json: No deny actions
+FLAW3-Error-2.json: No deny actions
+FLAW3-Error-3.json: No deny actions
+FLAW3-Error-4.json: No deny actions
+FLAW3-Error-5.json: No deny actions
+FLAW3-Error-6.json: No deny actions
+FLAW3-Error-7.json: No deny actions
+FLAW3-Error-8.json: No deny actions
+FLAW3-Error-9.json: No deny actions
+FLAW3-Error-10.json: No deny actions
+FLAW3-Error-11.json: No deny actions
+FLAW3-Error-12.json: No deny actions
+FLAW3-Error-13.json: No deny actions
+FLAW3-Error-14.json: No deny actions
+FLAW3-Error-15.json: No deny actions
+FLAW3-Error-16.json: No deny actions
+FLAW3-Error-17.json: No deny actions
+FLAW3-Error-18.json: No deny actions
+FLAW3-Error-19.json: No deny actions
+FLAW3-Error-20.json: No deny actions
+FLAW3-Error-21.json: No deny actions
+FLAW3-Error-22.json: No deny actions
+FLAW3-Error-23.json: No deny actions
+FLAW3-Error-24.json: No deny actions
+FLAW3-Error-25.json: No deny actions
+FLAW3-Error-26.json: No deny actions
+FLAW3-Error-27.json: No deny actions
+FLAW3-Error-28.json: No deny actions
+FLAW3-Error-29.json: No deny actions
+FLAW3-Error-30.json: No deny actions
+FLAW3-Error-31.json: No deny actions
+FLAW3-Error-32.json: No deny actions
+FLAW3-Error-33.json: No deny actions
+FLAW3-Error-34.json: No deny actions
+FLAW3-Error-35.json: No deny actions
+FLAW3-Error-36.json: No deny actions
+FLAW3-Error-37.json: No deny actions
+FLAW3-Error-38.json: No deny actions
+FLAW3-Error-39.json: No deny actions
+FLAW3-Error-40.json: No deny actions
+FLAW3-Error-41.json: No deny actions
+FLAW3-Error-42.json: No deny actions
+FLAW3-Error-43.json: No deny actions
+FLAW3-Error-44.json: No deny actions
+FLAW3-Error-45.json: No deny actions
+FLAW3-Error-46.json: No deny actions
+FLAW3-Error-47.json: No deny actions
+FLAW3-Error-48.json: No deny actions
+FLAW3-Error-49.json: No deny actions
+FLAW3-Error-50.json: No deny actions
+FLAW3-Error-51.json: No deny actions
+FLAW3-Error-52.json: No deny actions
+FLAW3-Error-53.json: No deny actions
+FLAW3-Error-54.json: No deny actions
+FLAW3-Error-55.json: No deny actions
+FLAW3-Error-56.json: No deny actions
+FLAW3-Error-57.json: No deny actions
+FLAW3-Error-58.json: No deny actions
+FLAW3-Error-59.json: No deny actions
+FLAW3-Error-60.json: No deny actions
+FLAW3-Error-61.json: No deny actions
+FLAW3-Error-62.json: No deny actions
+FLAW3-Error-63.json: No deny actions
+FLAW3-Error-64.json: No deny actions
+FLAW3-Error-65.json: No deny actions
+FLAW3-Error-66.json: No deny actions
+FLAW3-Error-67.json: No deny actions
+FLAW3-Error-68.json: No deny actions
+FLAW3-Error-69.json: No deny actions
+FLAW3-Error-70.json: No deny actions
+FLAW3-Error-71.json: No deny actions
+FLAW3-Error-72.json: No deny actions
+FLAW3-Error-73.json: No deny actions
+FLAW3-Error-74.json: No deny actions
+FLAW3-Error-75.json: No deny actions
+FLAW3-Error-76.json: No deny actions
+FLAW3-Error-77.json: No deny actions
+FLAW3-Error-78.json: No deny actions
+FLAW3-Error-79.json: No deny actions
+FLAW3-Error-80.json: No deny actions
+FLAW3-Error-81.json: No deny actions
+FLAW3-Error-82.json: No deny actions
+FLAW3-Error-83.json: No deny actions
+FLAW3-Error-84.json: No deny actions
+FLAW3-Error-85.json: No deny actions
+FLAW3-Error-86.json: No deny actions
+FLAW3-Error-87.json: No deny actions
+FLAW3-Error-88.json: No deny actions
+FLAW3-Error-89.json: No deny actions
+FLAW3-Error-90.json: No deny actions
+FLAW3-Error-91.json: No deny actions
+FLAW3-Error-92.json: No deny actions
+FLAW3-Error-93.json: No deny actions
+FLAW3-Error-94.json: No deny actions
+FLAW3-Error-95.json: No deny actions
+FLAW3-Error-96.json: No deny actions
+FLAW3-Error-97.json: No deny actions
+FLAW3-Error-98.json: No deny actions
+FLAW3-Error-99.json: No deny actions
+FLAW3-Error-100.json: No deny actions
+FLAW3-Error-101.json: No deny actions
+FLAW3-Error-102.json: No deny actions
+FLAW3-Error-103.json: No deny actions
+FLAW3-Error-104.json: No deny actions
+FLAW3-Error-105.json: No deny actions
+FLAW3-Error-106.json: No deny actions
+FLAW3-Error-107.json: No deny actions
+FLAW3-Error-108.json: No deny actions
+FLAW3-Error-109.json: No deny actions
+FLAW3-Error-110.json: No deny actions
+FLAW3-Error-111.json: No deny actions
+FLAW3-Error-112.json: No deny actions
+FLAW3-Error-113.json: No deny actions
+FLAW3-Error-114.json: No deny actions
+FLAW3-Error-115.json: No deny actions
+FLAW3-Error-116.json: No deny actions
+FLAW3-Error-117.json: No deny actions
+FLAW3-Error-118.json: No deny actions
+FLAW3-Error-119.json: No deny actions
+FLAW3-Error-120.json: No deny actions
+
+Process finished with exit code 0

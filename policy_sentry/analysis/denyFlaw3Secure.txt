@@ -1,0 +1,374 @@
+F:\researchVenv\py38policySentry\Scripts\python.exe F:\timmyisnotfat\policySentryTry\policy_sentry\analysis\forDeny.py
+Processed: FLAW3-Secure-1.json
+Processed: FLAW3-Secure-2.json
+Processed: FLAW3-Secure-3.json
+Processed: FLAW3-Secure-4.json
+Processed: FLAW3-Secure-5.json
+Processed: FLAW3-Secure-6.json
+Processed: FLAW3-Secure-7.json
+Processed: FLAW3-Secure-8.json
+Processed: FLAW3-Secure-9.json
+Processed: FLAW3-Secure-10.json
+Processed: FLAW3-Secure-11.json
+Processed: FLAW3-Secure-12.json
+Processed: FLAW3-Secure-13.json
+Processed: FLAW3-Secure-14.json
+Processed: FLAW3-Secure-15.json
+Processed: FLAW3-Secure-16.json
+Processed: FLAW3-Secure-17.json
+Processed: FLAW3-Secure-18.json
+Processed: FLAW3-Secure-19.json
+Processed: FLAW3-Secure-20.json
+Processed: FLAW3-Secure-21.json
+Processed: FLAW3-Secure-22.json
+Processed: FLAW3-Secure-23.json
+Processed: FLAW3-Secure-24.json
+Processed: FLAW3-Secure-25.json
+Processed: FLAW3-Secure-26.json
+Processed: FLAW3-Secure-27.json
+Processed: FLAW3-Secure-28.json
+Processed: FLAW3-Secure-29.json
+Processed: FLAW3-Secure-30.json
+Processed: FLAW3-Secure-31.json
+Processed: FLAW3-Secure-32.json
+Processed: FLAW3-Secure-33.json
+Processed: FLAW3-Secure-34.json
+Processed: FLAW3-Secure-35.json
+Processed: FLAW3-Secure-36.json
+Processed: FLAW3-Secure-37.json
+Processed: FLAW3-Secure-38.json
+Processed: FLAW3-Secure-39.json
+Processed: FLAW3-Secure-40.json
+Processed: FLAW3-Secure-41.json
+Processed: FLAW3-Secure-42.json
+Processed: FLAW3-Secure-43.json
+Processed: FLAW3-Secure-44.json
+Processed: FLAW3-Secure-45.json
+Processed: FLAW3-Secure-46.json
+Processed: FLAW3-Secure-47.json
+Processed: FLAW3-Secure-48.json
+Processed: FLAW3-Secure-49.json
+Processed: FLAW3-Secure-50.json
+Processed: FLAW3-Secure-51.json
+Processed: FLAW3-Secure-52.json
+Processed: FLAW3-Secure-53.json
+Processed: FLAW3-Secure-54.json
+Processed: FLAW3-Secure-55.json
+Processed: FLAW3-Secure-56.json
+Processed: FLAW3-Secure-57.json
+Processed: FLAW3-Secure-58.json
+Processed: FLAW3-Secure-59.json
+Processed: FLAW3-Secure-60.json
+Processed: FLAW3-Secure-61.json
+Processed: FLAW3-Secure-62.json
+Processed: FLAW3-Secure-63.json
+Processed: FLAW3-Secure-64.json
+Processed: FLAW3-Secure-65.json
+Processed: FLAW3-Secure-66.json
+Processed: FLAW3-Secure-67.json
+Processed: FLAW3-Secure-68.json
+Processed: FLAW3-Secure-69.json
+Processed: FLAW3-Secure-70.json
+Processed: FLAW3-Secure-71.json
+Processed: FLAW3-Secure-72.json
+Processed: FLAW3-Secure-73.json
+Processed: FLAW3-Secure-74.json
+Processed: FLAW3-Secure-75.json
+Processed: FLAW3-Secure-76.json
+Processed: FLAW3-Secure-77.json
+Processed: FLAW3-Secure-78.json
+Processed: FLAW3-Secure-79.json
+Processed: FLAW3-Secure-80.json
+Processed: FLAW3-Secure-81.json
+Processed: FLAW3-Secure-82.json
+Processed: FLAW3-Secure-83.json
+Processed: FLAW3-Secure-84.json
+Processed: FLAW3-Secure-85.json
+Processed: FLAW3-Secure-86.json
+Processed: FLAW3-Secure-87.json
+Processed: FLAW3-Secure-88.json
+Processed: FLAW3-Secure-89.json
+Processed: FLAW3-Secure-90.json
+Processed: FLAW3-Secure-91.json
+Processed: FLAW3-Secure-92.json
+Processed: FLAW3-Secure-93.json
+Processed: FLAW3-Secure-94.json
+Processed: FLAW3-Secure-95.json
+Processed: FLAW3-Secure-96.json
+Processed: FLAW3-Secure-97.json
+Processed: FLAW3-Secure-98.json
+Processed: FLAW3-Secure-99.json
+Processed: FLAW3-Secure-100.json
+Processed: FLAW3-Secure-101.json
+Processed: FLAW3-Secure-102.json
+Processed: FLAW3-Secure-103.json
+Processed: FLAW3-Secure-104.json
+Processed: FLAW3-Secure-105.json
+Processed: FLAW3-Secure-106.json
+Processed: FLAW3-Secure-107.json
+Processed: FLAW3-Secure-108.json
+Processed: FLAW3-Secure-109.json
+Processed: FLAW3-Secure-110.json
+Processed: FLAW3-Secure-111.json
+Processed: FLAW3-Secure-112.json
+Processed: FLAW3-Secure-113.json
+Processed: FLAW3-Secure-114.json
+Processed: FLAW3-Secure-115.json
+Processed: FLAW3-Secure-116.json
+Processed: FLAW3-Secure-117.json
+Processed: FLAW3-Secure-118.json
+Processed: FLAW3-Secure-119.json
+Processed: FLAW3-Secure-120.json
+Processed: FLAW3-Secure-121.json
+Processed: FLAW3-Secure-122.json
+Processed: FLAW3-Secure-123.json
+Processed: FLAW3-Secure-124.json
+Processed: FLAW3-Secure-125.json
+Processed: FLAW3-Secure-126.json
+Processed: FLAW3-Secure-127.json
+Processed: FLAW3-Secure-128.json
+Processed: FLAW3-Secure-129.json
+Processed: FLAW3-Secure-130.json
+Processed: FLAW3-Secure-131.json
+Processed: FLAW3-Secure-132.json
+Processed: FLAW3-Secure-133.json
+Processed: FLAW3-Secure-134.json
+Processed: FLAW3-Secure-135.json
+Processed: FLAW3-Secure-136.json
+Processed: FLAW3-Secure-137.json
+Processed: FLAW3-Secure-138.json
+Processed: FLAW3-Secure-139.json
+Processed: FLAW3-Secure-140.json
+Processed: FLAW3-Secure-141.json
+Processed: FLAW3-Secure-142.json
+Processed: FLAW3-Secure-143.json
+Processed: FLAW3-Secure-144.json
+Processed: FLAW3-Secure-145.json
+Processed: FLAW3-Secure-146.json
+Processed: FLAW3-Secure-147.json
+Processed: FLAW3-Secure-148.json
+Processed: FLAW3-Secure-149.json
+Processed: FLAW3-Secure-150.json
+Processed: FLAW3-Secure-151.json
+Processed: FLAW3-Secure-152.json
+Processed: FLAW3-Secure-153.json
+Processed: FLAW3-Secure-154.json
+Processed: FLAW3-Secure-155.json
+Processed: FLAW3-Secure-156.json
+Processed: FLAW3-Secure-157.json
+Processed: FLAW3-Secure-158.json
+Processed: FLAW3-Secure-159.json
+Processed: FLAW3-Secure-160.json
+Processed: FLAW3-Secure-161.json
+Processed: FLAW3-Secure-162.json
+Processed: FLAW3-Secure-163.json
+Processed: FLAW3-Secure-164.json
+Processed: FLAW3-Secure-165.json
+Processed: FLAW3-Secure-166.json
+Processed: FLAW3-Secure-167.json
+Processed: FLAW3-Secure-168.json
+Processed: FLAW3-Secure-169.json
+Processed: FLAW3-Secure-170.json
+Processed: FLAW3-Secure-171.json
+Processed: FLAW3-Secure-172.json
+Processed: FLAW3-Secure-173.json
+Processed: FLAW3-Secure-174.json
+Processed: FLAW3-Secure-175.json
+Processed: FLAW3-Secure-176.json
+Processed: FLAW3-Secure-177.json
+Processed: FLAW3-Secure-178.json
+Processed: FLAW3-Secure-179.json
+Processed: FLAW3-Secure-180.json
+Processed: FLAW3-Secure-181.json
+Processed: FLAW3-Secure-182.json
+Processed: FLAW3-Secure-183.json
+Output has been saved to expanded_policies_output.txt
+
+Total Action Counts Across All Policies:
+
+Deny Actions in Policies:
+FLAW3-Secure-1.json: No deny actions
+FLAW3-Secure-2.json: No deny actions
+FLAW3-Secure-3.json: No deny actions
+FLAW3-Secure-4.json: No deny actions
+FLAW3-Secure-5.json: No deny actions
+FLAW3-Secure-6.json: No deny actions
+FLAW3-Secure-7.json: No deny actions
+FLAW3-Secure-8.json: No deny actions
+FLAW3-Secure-9.json: No deny actions
+FLAW3-Secure-10.json: No deny actions
+FLAW3-Secure-11.json: No deny actions
+FLAW3-Secure-12.json: No deny actions
+FLAW3-Secure-13.json: No deny actions
+FLAW3-Secure-14.json: No deny actions
+FLAW3-Secure-15.json: No deny actions
+FLAW3-Secure-16.json: No deny actions
+FLAW3-Secure-17.json: No deny actions
+FLAW3-Secure-18.json: No deny actions
+FLAW3-Secure-19.json: No deny actions
+FLAW3-Secure-20.json: No deny actions
+FLAW3-Secure-21.json: No deny actions
+FLAW3-Secure-22.json: No deny actions
+FLAW3-Secure-23.json: No deny actions
+FLAW3-Secure-24.json: No deny actions
+FLAW3-Secure-25.json: No deny actions
+FLAW3-Secure-26.json: No deny actions
+FLAW3-Secure-27.json: No deny actions
+FLAW3-Secure-28.json: No deny actions
+FLAW3-Secure-29.json: No deny actions
+FLAW3-Secure-30.json: No deny actions
+FLAW3-Secure-31.json: No deny actions
+FLAW3-Secure-32.json: No deny actions
+FLAW3-Secure-33.json: No deny actions
+FLAW3-Secure-34.json: No deny actions
+FLAW3-Secure-35.json: No deny actions
+FLAW3-Secure-36.json: No deny actions
+FLAW3-Secure-37.json: No deny actions
+FLAW3-Secure-38.json: No deny actions
+FLAW3-Secure-39.json: No deny actions
+FLAW3-Secure-40.json: No deny actions
+FLAW3-Secure-41.json: No deny actions
+FLAW3-Secure-42.json: No deny actions
+FLAW3-Secure-43.json: No deny actions
+FLAW3-Secure-44.json: No deny actions
+FLAW3-Secure-45.json: No deny actions
+FLAW3-Secure-46.json: No deny actions
+FLAW3-Secure-47.json: No deny actions
+FLAW3-Secure-48.json: No deny actions
+FLAW3-Secure-49.json: No deny actions
+FLAW3-Secure-50.json: No deny actions
+FLAW3-Secure-51.json: No deny actions
+FLAW3-Secure-52.json: No deny actions
+FLAW3-Secure-53.json: No deny actions
+FLAW3-Secure-54.json: No deny actions
+FLAW3-Secure-55.json: No deny actions
+FLAW3-Secure-56.json: No deny actions
+FLAW3-Secure-57.json: No deny actions
+FLAW3-Secure-58.json: No deny actions
+FLAW3-Secure-59.json: No deny actions
+FLAW3-Secure-60.json: iot:Connect
+FLAW3-Secure-61.json: No deny actions
+FLAW3-Secure-62.json: No deny actions
+FLAW3-Secure-63.json: No deny actions
+FLAW3-Secure-64.json: No deny actions
+FLAW3-Secure-65.json: No deny actions
+FLAW3-Secure-66.json: No deny actions
+FLAW3-Secure-67.json: No deny actions
+FLAW3-Secure-68.json: No deny actions
+FLAW3-Secure-69.json: No deny actions
+FLAW3-Secure-70.json: No deny actions
+FLAW3-Secure-71.json: No deny actions
+FLAW3-Secure-72.json: No deny actions
+FLAW3-Secure-73.json: No deny actions
+FLAW3-Secure-74.json: No deny actions
+FLAW3-Secure-75.json: No deny actions
+FLAW3-Secure-76.json: No deny actions
+FLAW3-Secure-77.json: No deny actions
+FLAW3-Secure-78.json: No deny actions
+FLAW3-Secure-79.json: No deny actions
+FLAW3-Secure-80.json: iot:Publish
+FLAW3-Secure-81.json: No deny actions
+FLAW3-Secure-82.json: No deny actions
+FLAW3-Secure-83.json: No deny actions
+FLAW3-Secure-84.json: No deny actions
+FLAW3-Secure-85.json: No deny actions
+FLAW3-Secure-86.json: No deny actions
+FLAW3-Secure-87.json: No deny actions
+FLAW3-Secure-88.json: No deny actions
+FLAW3-Secure-89.json: No deny actions
+FLAW3-Secure-90.json: No deny actions
+FLAW3-Secure-91.json: No deny actions
+FLAW3-Secure-92.json: No deny actions
+FLAW3-Secure-93.json: No deny actions
+FLAW3-Secure-94.json: No deny actions
+FLAW3-Secure-95.json: No deny actions
+FLAW3-Secure-96.json: No deny actions
+FLAW3-Secure-97.json: No deny actions
+FLAW3-Secure-98.json: No deny actions
+FLAW3-Secure-99.json: No deny actions
+FLAW3-Secure-100.json: No deny actions
+FLAW3-Secure-101.json: No deny actions
+FLAW3-Secure-102.json: No deny actions
+FLAW3-Secure-103.json: No deny actions
+FLAW3-Secure-104.json: No deny actions
+FLAW3-Secure-105.json: No deny actions
+FLAW3-Secure-106.json: No deny actions
+FLAW3-Secure-107.json: No deny actions
+FLAW3-Secure-108.json: No deny actions
+FLAW3-Secure-109.json: No deny actions
+FLAW3-Secure-110.json: No deny actions
+FLAW3-Secure-111.json: No deny actions
+FLAW3-Secure-112.json: No deny actions
+FLAW3-Secure-113.json: No deny actions
+FLAW3-Secure-114.json: No deny actions
+FLAW3-Secure-115.json: No deny actions
+FLAW3-Secure-116.json: No deny actions
+FLAW3-Secure-117.json: No deny actions
+FLAW3-Secure-118.json: No deny actions
+FLAW3-Secure-119.json: No deny actions
+FLAW3-Secure-120.json: No deny actions
+FLAW3-Secure-121.json: No deny actions
+FLAW3-Secure-122.json: No deny actions
+FLAW3-Secure-123.json: No deny actions
+FLAW3-Secure-124.json: No deny actions
+FLAW3-Secure-125.json: No deny actions
+FLAW3-Secure-126.json: No deny actions
+FLAW3-Secure-127.json: No deny actions
+FLAW3-Secure-128.json: No deny actions
+FLAW3-Secure-129.json: No deny actions
+FLAW3-Secure-130.json: No deny actions
+FLAW3-Secure-131.json: No deny actions
+FLAW3-Secure-132.json: No deny actions
+FLAW3-Secure-133.json: No deny actions
+FLAW3-Secure-134.json: No deny actions
+FLAW3-Secure-135.json: No deny actions
+FLAW3-Secure-136.json: No deny actions
+FLAW3-Secure-137.json: No deny actions
+FLAW3-Secure-138.json: No deny actions
+FLAW3-Secure-139.json: No deny actions
+FLAW3-Secure-140.json: No deny actions
+FLAW3-Secure-141.json: No deny actions
+FLAW3-Secure-142.json: No deny actions
+FLAW3-Secure-143.json: No deny actions
+FLAW3-Secure-144.json: No deny actions
+FLAW3-Secure-145.json: No deny actions
+FLAW3-Secure-146.json: No deny actions
+FLAW3-Secure-147.json: No deny actions
+FLAW3-Secure-148.json: No deny actions
+FLAW3-Secure-149.json: No deny actions
+FLAW3-Secure-150.json: No deny actions
+FLAW3-Secure-151.json: No deny actions
+FLAW3-Secure-152.json: No deny actions
+FLAW3-Secure-153.json: No deny actions
+FLAW3-Secure-154.json: No deny actions
+FLAW3-Secure-155.json: No deny actions
+FLAW3-Secure-156.json: No deny actions
+FLAW3-Secure-157.json: No deny actions
+FLAW3-Secure-158.json: No deny actions
+FLAW3-Secure-159.json: No deny actions
+FLAW3-Secure-160.json: No deny actions
+FLAW3-Secure-161.json: No deny actions
+FLAW3-Secure-162.json: No deny actions
+FLAW3-Secure-163.json: No deny actions
+FLAW3-Secure-164.json: No deny actions
+FLAW3-Secure-165.json: iot:Receive
+FLAW3-Secure-166.json: No deny actions
+FLAW3-Secure-167.json: iot:Receive
+FLAW3-Secure-168.json: iot:Receive
+FLAW3-Secure-169.json: No deny actions
+FLAW3-Secure-170.json: iot:Receive
+FLAW3-Secure-171.json: iot:Receive
+FLAW3-Secure-172.json: iot:Receive
+FLAW3-Secure-173.json: iot:Receive
+FLAW3-Secure-174.json: iot:Receive
+FLAW3-Secure-175.json: iot:Receive
+FLAW3-Secure-176.json: iot:Receive
+FLAW3-Secure-177.json: iot:Receive, iot:Subscribe
+FLAW3-Secure-178.json: iot:Receive
+FLAW3-Secure-179.json: iot:Receive
+FLAW3-Secure-180.json: No deny actions
+FLAW3-Secure-181.json: No deny actions
+FLAW3-Secure-182.json: No deny actions
+FLAW3-Secure-183.json: No deny actions
+
+Process finished with exit code 0
