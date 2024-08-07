@@ -1,90 +1,87 @@
-import os
+from policy_sentry.analysis.expand import get_expanded_policy, expand
+from policy_sentry.util.policy_files import get_actions_from_statement
 import json
 from collections import Counter
-from policy_sentry.analysis.expand import get_expanded_policy
+import os
 
 
-def process_iot_policies(directory_path):
-    results = {}
-    flaw_number = 1
-    error_number = 1
-    while True:
-        filename = f"FLAW{flaw_number}-Error-{error_number}.json"
-        file_path = os.path.join(directory_path, filename)
-        if not os.path.exists(file_path):
-            if error_number == 1:
-                break
-            else:
-                flaw_number += 1
-                error_number = 1
-                continue
+def extract_actions(policy):
+    actions = []
+    if isinstance(policy, list):
+        # 如果策略是一个列表（展开后的策略），直接返回
+        return policy
+    elif isinstance(policy, dict):
+        if 'Statement' in policy:
+            for statement in policy['Statement']:
+                if 'Action' in statement:
+                    action = statement['Action']
+                    if isinstance(action, str):
+                        actions.append(action)
+                    elif isinstance(action, list):
+                        actions.extend(action)
+        else:
+            # 处理可能的单个语句情况
+            if 'Action' in policy:
+                action = policy['Action']
+                if isinstance(action, str):
+                    actions.append(action)
+                elif isinstance(action, list):
+                    actions.extend(action)
+    return actions
+
+def list_to_dict(action_list):
+    action_dict = {}
+    for action in action_list:
+        if action in action_dict:
+            action_dict[action] += 1
+        else:
+            action_dict[action] = 1
+    return action_dict
+
+
+policy_directory = 'F:/timmyisnotfat/P-Verifier/policy_benchmark/FLAW3'
+total_action_counts = Counter()
+
+for filename in os.listdir(policy_directory):
+    if filename.endswith('.json'):
+        file_path = os.path.join(policy_directory, filename)
+        print(f"\nProcessing file: {filename}")
+
         with open(file_path, 'r') as file:
             try:
                 policy = json.load(file)
-                policy = get_expanded_policy(policy)
-                results[filename] = policy
 
-                # 计算并打印当前文件中的"iot:subscribe"操作数量
-                actions = extract_actions(policy)
-                iot_subscribe_count = actions.count("iot:subscribe")
-                print(f"Processed: {filename}, iot:subscribe count: {iot_subscribe_count}")
+                expanded_policy = get_expanded_policy(policy)
+                print("\nExpanded Policy:")
+                print(json.dumps(expanded_policy, indent=2))
+
+                original_actions = extract_actions(policy)
+                print("\nOriginal Actions:")
+                print(original_actions)
+
+                expanded_actions = extract_actions(expanded_policy)
+                #expanded_actions = list_to_dict(expanded_actions)
+                print("\nExpanded Actions:")
+                print(expanded_actions)
+
+                # 使用展开后的操作进行计数
+                if len(expanded_actions) > len(original_actions):
+                    file_action_counts = Counter(expanded_actions)
+                else:
+                    file_action_counts = Counter(original_actions)
+                print("\nAction Counts for this file:")
+                for action, count in file_action_counts.items():
+                    print(f"{action}: {count}")
+
+                total_action_counts.update(file_action_counts)
 
             except json.JSONDecodeError:
                 print(f"Error: {filename} is not a valid JSON file.")
             except Exception as e:
                 print(f"Error processing {filename}: {str(e)}")
-        error_number += 1
-    return results
 
-def extract_actions(item):
-    if isinstance(item, dict):
-        if 'Statement' in item:
-            return extract_actions(item['Statement'])
-        return item.get('Action', [])
-    elif isinstance(item, str):
-        return [item]
-    elif isinstance(item, list):
-        actions = []
-        for subitem in item:
-            actions.extend(extract_actions(subitem))
-        return actions
-    return []
+print("\nTotal Action Counts Across All Policies:")
+for action, count in total_action_counts.most_common():
+    print(f"{action}: {count}")
 
-
-def count_total_actions(policies):
-    total_action_counter = Counter()
-    for policy in policies.values():
-        actions = extract_actions(policy)
-        total_action_counter.update(actions)
-    return total_action_counter
-
-
-def save_output_to_file(policies, total_action_counts, output_file):
-    with open(output_file, 'w') as f:
-        for filename, policy in policies.items():
-            f.write(f"\nPolicy for {filename}:\n")
-            f.write(json.dumps(policy, indent=4))
-            f.write("\n\n")
-        f.write("\nTotal Action Counts Across All Policies:\n")
-        for action, count in total_action_counts.items():
-            f.write(f"{action}: {count}\n")
-
-
-if __name__ == '__main__':
-    policy_directory = 'F:/timmyisnotfat/P-Verifier/policy_benchmark/FLAW1'
-    output_file = 'policies_output.txt'
-
-    policies = process_iot_policies(policy_directory)
-
-    # 打印处理的策略以进行调试
-    print("Processed Policies:")
-    print(json.dumps(policies, indent=2))
-
-    total_action_counts = count_total_actions(policies)
-
-    save_output_to_file(policies, total_action_counts, output_file)
-
-    print(f"Output has been saved to {output_file}")
-    print("\nTotal Action Counts Across All Policies:")
-    for action, count in total_action_counts.items():
-        print(f"{action}: {count}")
+print(f"\nTotal 'iot:Subscribe' count: {total_action_counts['iot:Subscribe']}")
