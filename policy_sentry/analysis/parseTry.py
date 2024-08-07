@@ -8,7 +8,6 @@ import os
 def extract_actions(policy):
     actions = []
     if isinstance(policy, list):
-        # 如果策略是一个列表（展开后的策略），直接返回
         return policy
     elif isinstance(policy, dict):
         if 'Statement' in policy:
@@ -20,7 +19,6 @@ def extract_actions(policy):
                     elif isinstance(action, list):
                         actions.extend(action)
         else:
-            # 处理可能的单个语句情况
             if 'Action' in policy:
                 action = policy['Action']
                 if isinstance(action, str):
@@ -64,7 +62,7 @@ for filename in os.listdir(policy_directory):
                 print("\nExpanded Actions:")
                 print(expanded_actions)
 
-                # 使用展开后的操作进行计数
+
                 if len(expanded_actions) > len(original_actions):
                     file_action_counts = Counter(expanded_actions)
                 else:
