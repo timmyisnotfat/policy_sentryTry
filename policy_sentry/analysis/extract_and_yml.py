@@ -177,7 +177,7 @@ class extract_and_output_by_yml:
                     # print(temp_parts1[-1],"1111")
 
                 if "*" in temp_parts[-1] and "*" not in temp_parts1[-1]:
-                    print(f'{resource},this resource isn\'t safe')
+                    print(f'{resource},from action {action} ,this resource isn\'t safe')
                     continue
 
                 slash_temp_parts = temp_parts[-1].split('/')
