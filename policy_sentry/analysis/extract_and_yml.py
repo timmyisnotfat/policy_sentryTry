@@ -11,7 +11,7 @@ policy = '''
             "Effect": "Allow",
             "Action": "iot:Subscribe",
             "Resource": [
-                "arn:aws:iot:eu-west-1:435775406265:topicfilter/lambda/vsure/login",
+                "arn:aws:iot:eu-west-1:435775406265:topicfilter/lambda/vsure/abc",
                 "arn:aws:iot:eu-west-1:435775406265:topicfilter/lambda/vsure/password"
             ]
         },
@@ -135,29 +135,82 @@ class extract_and_output_by_yml:
                 fifth_comma_parts.append(temp_fifth_comma_parts)
         return fifth_comma_parts
 
+    def has_wildcard(self, resource):
+        return any(char in resource for char in ['*', '#', '+'])
 
-# Test the class
-extractor = extract_and_output_by_yml()
-a, b, c = extractor.extract(policy)
-yml_file_path = 'action.yml'
-# print(a)
-extractor.update_yml_file(yml_file_path, a)
-results = extractor.generate_policy_with_updatedyml(yml_file_path)
-actions, resources,diction = extractor.extract(results)
-# print(f'the resources:{resources}')
-print(json.dumps(c,indent=2))
-# print(json.dumps(results,indent=2))
-print(json.dumps(diction,indent=2))
-
-for action in actions:
-    if "*" in c[action]:
-        print('an unsafe Original Policy')
-
-    print(c[action])
-    print(diction[action],'\n')
-
-# print(json.dumps(resources,indent=2))
-# print(json.dumps(b,indent=2))
+    def compare_policies(self, original_dict, generated_dict):
+        unsafe_actions = []
+        for action, orig_resources in original_dict.items():
+            if action in generated_dict:
+                gen_resources = generated_dict[action]
+                if any(self.has_wildcard(res) for res in orig_resources) and not any(self.has_wildcard(res) for res in gen_resources):
+                    unsafe_actions.append(action)
 
 
-# print(policy)
+        return unsafe_actions
+
+    def use(self, input_policy, yml_file_path='action.yml'):
+        # Extract actions, resources, and dictionary from input policy
+        actions, resources, action_resource_dict = self.extract(input_policy)
+
+        # Update the YAML file with extracted actions
+        self.update_yml_file(yml_file_path, actions)
+
+        # Generate new policy based on updated YAML file
+        generated_policy = self.generate_policy_with_updatedyml(yml_file_path)
+
+        # Extract actions, resources, and dictionary from generated policy
+        gen_actions, gen_resources, gen_action_resource_dict = self.extract(generated_policy)
+
+        # Compare original and generated policies
+        #unsafe_actions = self.compare_policies(action_resource_dict, gen_action_resource_dict)
+        for action in actions:
+            # print(action_resource_dict[action])
+            # print(gen_action_resource_dict[action])
+
+            for resource in action_resource_dict[action]:
+                # print(resource)
+                temp_parts = resource.split(':')
+                # print(temp_parts[-1],"00000000")
+                for resource1 in gen_action_resource_dict[action]:
+                    temp_parts1 = resource1.split(':')
+                    # print(temp_parts1[-1],"1111")
+
+                if "*" in temp_parts[-1] and "*" not in temp_parts1[-1]:
+                    print(f'{resource},this resource isn\'t safe')
+                    continue
+
+                slash_temp_parts = temp_parts[-1].split('/')
+                slash_temp_parts1 = temp_parts1[-1].split('/')
+                # print(slash_temp_parts,slash_temp_parts1,'2222')
+                for i, part in enumerate(slash_temp_parts1):
+                    if "$" in part:
+                        # print(part, "333333")
+                        if i < len(slash_temp_parts) and isinstance(slash_temp_parts[i], str):
+                            print(f"{resource}   this resource is safe")
+
+
+        return {
+            'original_actions': actions,
+            'original_resources': resources,
+            'original_action_resource_dict': action_resource_dict,
+            'generated_actions': gen_actions,
+            'generated_resources': gen_resources,
+            'generated_action_resource_dict': gen_action_resource_dict,
+            'generated_policy': generated_policy
+        }
+
+
+
+#test
+if __name__ == "__main__":
+    extractor = extract_and_output_by_yml()
+
+    results = extractor.use(policy)
+
+    # print("Original Actions:", json.dumps(results['original_actions'],indent=2))
+    # print("Generated Actions:", json.dumps(results['generated_actions'],indent=2))
+    # print("Original Resources:", json.dumps(results['original_resources'],indent=2))
+    # print("Generated Resources:", json.dumps(results['generated_resources'],indent=2))
+    # print("Generated Policy:", json.dumps(results['generated_policy'],indent=2))
+    # print("unsafe actions:", json.dumps(results['unsafe_actions'],indent=2))
