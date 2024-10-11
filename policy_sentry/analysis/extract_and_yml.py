@@ -1,6 +1,8 @@
 import json
 import yaml
 from policy_sentry.command.write_policy import write_policy_with_template
+from policy_sentry.querying.actions import get_actions_that_support_wildcard_arns_only
+from policy_sentry.querying.actions import get_actions_for_service
 import re
 
 policy = '''
@@ -23,8 +25,8 @@ policy = '''
         {
             "Effect": "Allow",
             "Action": [
-                "iot:Connect",
-                "iot:Publish"
+                "iot:GetV2LoggingOptions",
+                "iot:DetachThingPrincipal"
             ],
             "Resource": "*"
         }
@@ -149,6 +151,62 @@ class extract_and_output_by_yml:
 
         return unsafe_actions
 
+    def mix_use_detection(self,policy):
+        service_in_the_policy = set()
+        actions,_,_ = self.extract(policy)
+        unconstrain_action = set()
+        for action in actions:
+            temp = action.split(':')
+            service_in_the_policy.add(temp[0])
+
+        for service in service_in_the_policy:
+            unconstrain = get_actions_that_support_wildcard_arns_only(service)
+            unconstrain_action.append(unconstrain)
+
+
+        return unconstrain_action
+
+    def mix_use_detection_new(self,policy):
+        # Check if the policy is a string, if so, parse it
+        if isinstance(policy, str):
+            try:
+                policy = json.loads(policy)
+            except json.JSONDecodeError:
+                raise ValueError("Invalid JSON string provided for policy")
+
+        # Extract all statements from the policy
+        statements = policy.get('Statement', [])
+        if isinstance(statements, dict):
+            statements = [statements]
+
+        # Check each statement for mixed use
+        for statement in statements:
+            actions = statement.get('Action', [])
+            resources = statement.get('Resource', '*')
+
+            # Convert actions to a set if it's a string (single action)
+            if isinstance(actions, str):
+                actions = {actions}
+            else:
+                actions = set(actions)
+
+            # Get unique services from the actions
+            services = {action.split(':')[0] for action in actions}
+
+            for service in services:
+                service_actions = {action for action in actions if action.startswith(f"{service}:")}
+                unconstrained_actions = set(get_actions_that_support_wildcard_arns_only(service))
+                all_actions = set(get_actions_for_service(service))
+                constrained_actions = all_actions - unconstrained_actions
+
+                has_unconstrained = bool(service_actions.intersection(unconstrained_actions))
+                has_constrained = bool(service_actions.intersection(constrained_actions))
+
+                if has_unconstrained and has_constrained:
+                    return True  # Mixed use detected in this action block
+
+        return False  # No mixed use detected in any action block
+
     def use(self, input_policy, yml_file_path='action.yml'):
         # Extract actions, resources, and dictionary from input policy
         actions, resources, action_resource_dict = self.extract(input_policy)
@@ -210,6 +268,9 @@ if __name__ == "__main__":
 
     results = extractor.use(policy)
 
+    a = extractor.mix_use_detection_new(policy)
+
+    print(a)
     # print("Original Actions:", json.dumps(results['original_actions'],indent=2))
     # print("Generated Actions:", json.dumps(results['generated_actions'],indent=2))
     # print("Original Resources:", json.dumps(results['original_resources'],indent=2))
