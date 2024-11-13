@@ -336,6 +336,88 @@ class extract_and_output_by_yml:
 
         return if_flaw
 
+    def if_onlyiotcore_action(self,policy):
+        if_iot = True
+        iot_action = [
+            'iot:Subscribe',
+            'iot:Connect',
+            'iot:DeleteThingShadow',
+            'iotjobsdata:DescribeJobExecution',
+            'iotjobsdata:GetPendingJobExecutions',
+            'iot:GetRetainedMessage',
+            'iot:GetThingShadow',
+            'iot:ListNamedShadowsForThing',
+            'iot:ListRetainedMessages',
+            'iot:Publish',
+            'iot:Receive',
+            'iot:RetainPublish',
+            'iotjobsdata:StartNextPendingJobExecution',
+            'iotjobsdata:UpdateJobExecution',
+            'iot:UpdateThingShadow',
+            'iot:AssumeRoleWithCertificate'
+        ]
+
+        actions, _,_ = self.extract(policy)
+        for action in actions:
+            if action not in iot_action:
+                if_iot = False
+                return if_iot
+        return if_iot
+
+    def generate_iotpolicywithvariable(self,policy,yml_file_path='geniot_action.yml'):
+        # NEED to implement a function that check if there is a file named "geniot_action.yml" in this directory
+        if self.if_onlyiotcore_action(policy):
+            actions,_,_ = self.extract(policy)
+            self.update_yml_file('geniot_action.yml',actions)
+            generate_policy = self.generate_policy_with_updatedyml(yml_file_path)
+            gen_ac, gen_poli, acpoli_dic = self.extract(generate_policy)
+            print(acpoli_dic)
+            for action in gen_ac:
+                resources = acpoli_dic[action]
+                if isinstance(resources, list):
+                    # Join the list elements with '/' if it's a list of path components
+                    resource_str = '/'.join(str(r) for r in resources)
+                else:
+                    resource_str = str(resources)
+                slash_parts = resource_str.split('/')
+                # print(slash_parts)
+                if slash_parts[-1] == '${ThingName}':
+                    variable_part = '${iot:Connection.Thing.ThingName}'
+                elif slash_parts[-1] == '${ClientId}':
+                    variable_part = '${iot:ClientId}'
+                elif slash_parts[-1] == '${TopicFilter}':
+                    variable_part = '${iot:ClientId}'
+                elif slash_parts[-1] == '${TopicName}':
+                    variable_part = '${iot:ClientId}'
+
+                if '*' not in slash_parts:
+                    updated_resource = slash_parts[0] + '/' + variable_part
+                    acpoli_dic[action] = updated_resource
+                else:
+                    updated_resource = '*'
+                    acpoli_dic[action] = updated_resource
+            for action in gen_ac:
+                print(f'{action}:{acpoli_dic[action]}')
+
+                # Generate the final policy document with separate statements
+                policy_document = {
+                    "Version": "2012-10-17",
+                    "Statement": []
+                }
+
+                # Create individual statements for each action-resource pair
+                for action in gen_ac:
+                    statement = {
+                        "Effect": "Allow",
+                        "Action": action,
+                        "Resource": acpoli_dic[action]
+                    }
+                    policy_document["Statement"].append(statement)
+
+
+
+        return policy_document
+
     def use(self, input_policy, yml_file_path='action.yml'):
         # Extract actions, resources, and dictionary from input policy
         actions, resources, action_resource_dict = self.extract(input_policy)
@@ -455,7 +537,18 @@ if __name__ == "__main__":
         {
             "Effect": "Allow",
             "Action": [
-                "iot:Connect"
+                "iot:Connect",
+                "iot:DeleteThingShadow",
+                "iot:GetRetainedMessage",
+                "iot:GetThingShadow",
+                "iot:ListNamedShadowsForThing",
+                "iot:ListRetainedMessages",
+                "iot:RetainPublish",
+                "iotjobsdata:StartNextPendingJobExecution",
+                "iotjobsdata:UpdateJobExecution",
+                "iot:UpdateThingShadow",
+                "iotjobsdata:GetPendingJobExecutions",
+                "iotjobsdata:DescribeJobExecution"
             ],
             "Resource": [
                 "arn:aws:iot:us-east-1:123456789012:client/${iot:Connection.Thing.ThingName}"
@@ -497,8 +590,8 @@ if __name__ == "__main__":
 
     extractor = extract_and_output_by_yml()
     #
-    results = extractor.publish_check(policy)
-    print(results)
+    results = extractor.generate_iotpolicywithvariable(policy)
+    print(json.dumps(results, indent=2))
 
 
     # a = extractor.generate_policy_with_updatedyml('action.yml')
